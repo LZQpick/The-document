@@ -24,3 +24,9 @@ conda install pytorch==1.3.1 torchvision==0.4.2 pillow==6.2.1
 python
 import torch
 torch.cuda.is_available() 该语句结束显示True即可。
+
+五.2021.11.12更新
+以上操作都是在工位电脑上尝试的，1660s+py36。
+在自己笔记本上使用上述命令会出现GPU无法使用的情况，处理方法如下：
+①更新显卡驱动（rtx3050+py3.6）
+②使用官网上的命令conda install pytorch torchvision torchaudio cudatoolkit=10.2
